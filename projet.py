@@ -14,10 +14,7 @@ tab=["a","b","d","é","è","f","g","i","j","k","l","m","n","o","p","r","s","t","
 liste=['','','','']
 width = 440
 height = 230
-class Enfant:
-  def __init__(self, name, score):
-    self.name = name
-    self.score = score
+
 
 
 
@@ -67,7 +64,7 @@ def fctsuivant() :
   bouton3 = Button(frame3,image=photoImg3, command=lambda : cliquebtnfaux("red",bouton3,frame3,3,0,NomPhoto3[0],lettre_choisie),height = 230, width = 440)
   bouton4 = Button(frame4,image=photoImg4, command=lambda : cliquebtnfaux("red",bouton4,frame4,3,1,NomPhoto4[0],lettre_choisie),height = 230, width = 440)
 
-  boutonsuivant = Button(fenetre,text="suivant", command=fctsuivant,height = 2, width = 8,bg='#53BFFF', font=("Courrier",30),bd=0,fg="white")
+  boutonsuivant = Button(fenetre,text="→", command=fctsuivant,height = 2, width = 8,bg='#53BFFF', font=("Courrier",30),bd=0,fg="white")
 
 
   boutonsuivant.grid(row=0,column=1)
